@@ -1,0 +1,18 @@
+<!-- src/app/questionnaire/questionnaire.component.html -->
+<div *ngFor="let question of questions; let i = index" class="question">
+    <p class="question-text">{{ i + 1 }}. {{ question.questionText }}</p>
+    <div *ngIf="question.questionType === 'Checkbox'" class="answer">
+        <div *ngFor="let option of question.options" class="checkbox-option">
+            <input type="checkbox" [value]="option" id="{{ 'checkbox-' + i + '-' + option }}" class="checkbox-input" />
+            <label [for]=" 'checkbox-' + i + '-' + option" class="checkbox-label">{{ option }}</label>
+        </div>
+    </div>
+    <div *ngIf="question.questionType === 'SelectList'" class="answer">
+        <select class="select-list">
+            <option *ngFor="let option of question.options" [value]="option">{{ option }}</option>
+        </select>
+    </div>
+    <div *ngIf="question.questionType === 'InputText'" class="answer">
+        <input type="text" class="input-text" />
+    </div>
+</div>

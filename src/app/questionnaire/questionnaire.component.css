@@ -1,0 +1,73 @@
+/* src/app/questionnaire/questionnaire.component.css */
+
+.question {
+    font-size: 26px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  .answer {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+  }
+
+  .answer select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .answer select:hover,
+  .answer select:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .checkbox-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .checkbox-input {
+    margin-right: 8px;
+  }
+  
+  .checkbox-label {
+    font-size: 20px;
+    cursor: pointer; /* Add this to make the label clickable */
+  }
+
+
+  
+  .answer input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .answer input[type="text"]:hover,
+  .answer input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  /* Add additional styling as needed */
+  
